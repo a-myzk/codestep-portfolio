@@ -17,11 +17,22 @@ img {
 li {
   list-style: none;
 }
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
 .site-title {
   line-height: 1px;
 }
 .site-title a {
   display: block;
+}
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
 }
 
 /* ヘッダー */
@@ -63,12 +74,30 @@ li {
   object-fit: cover;
 }
 
+/* aboutセクション */
+#about ul {
+  margin-bottom: 30px;
+}
+#about li:first-child {
+  margin-bottom: 30px;
+}
+#about p {
+  text-align: justify;
+}
+
 /* メディアクエリ */
 @media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
   .site-title {
     margin-top: 20px;
   }
+  .sec-title {
+    margin-bottom: 40px;
+  }
 
+  /* ヘッダー */
   #header {
     max-width: 100%;
     height: auto;
@@ -77,5 +106,5 @@ li {
   #header li {
     font-size: 0.8rem;
     margin-left: 20px;
-}
+  }
 }
