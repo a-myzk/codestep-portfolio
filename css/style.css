@@ -85,6 +85,18 @@ li {
   text-align: justify;
 }
 
+/* worksセクション */
+#works ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#works li {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
 /* メディアクエリ */
 @media screen and (max-width: 600px) {
   .wrapper {
@@ -106,5 +118,13 @@ li {
   #header li {
     font-size: 0.8rem;
     margin-left: 20px;
+  }
+
+  /* worksセクション */
+  #works ul {
+    flex-direction: column;
+  }
+  #works li {
+    width: 100%;
   }
 }
