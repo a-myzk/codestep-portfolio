@@ -183,6 +183,9 @@ li {
     font-size: 0.8rem;
     margin-left: 20px;
   }
+  #header li:first-child {
+    margin-left: 0;
+  }
 
   /* worksセクション */
   #works ul {
